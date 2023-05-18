@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './app.scss';
-import InputShortener from './components/inputShortener/InputShortener';
-import LinkResult from './components/linkResult/LinkResult';
-// import BackgroundAnimate from './components/backgroundAnimate/BackgroundAnimate';
+import {
+  BrowserRouter as Router, 
+  Routes, Route
+} from 'react-router-dom';
+import Home from './pages/home/Home';
+import UrlShortener from './pages/urlShortener/UrlShortener';
 
 const App = () =>  {
-  const [inputValue, setInputValue] = useState("");
 
   return (
     <div className="app">
-      <InputShortener setInputValue={setInputValue} />
-      <LinkResult inputValue={inputValue} />
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/urlShortener' element={<UrlShortener />} />
+        </Routes>
+      </Router>
     </div>
   )
 }

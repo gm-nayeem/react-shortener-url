@@ -6,16 +6,11 @@
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.app {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: gray;
-}
 
-.link {
-  color: inherit;
-  text-decoration: none;
+.app {
+
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
 }
