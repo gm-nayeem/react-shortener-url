@@ -1,0 +1,32 @@
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+
+    p {
+        color: #fff;
+        border: 1px solid #f99f38;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        color: #fff;
+        cursor: pointer;
+        background: #f99f38;
+        border: none;
+
+        &.copied {
+            background: #fff;
+            color: #f99f38;
+        }
+    }
+    
+}
+
+.noData {
+    color: #fff;
+    font-size: 1rem;
+}
